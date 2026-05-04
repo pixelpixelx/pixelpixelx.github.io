@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mona Farrokhi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <nav>
+    <div class="logo">MONA FARROKHI</div>
+    <div class="nav-links">
+      <a onclick="go('home')" class="active" id="n-home">Home</a>
+      <a onclick="go('artist')" id="n-artist">Artist</a>
+      <a onclick="go('direction')" id="n-direction">Creative Director</a>
+      <a onclick="go('educator')" id="n-educator">Educator</a>
+      <a onclick="go('about')" id="n-about">About</a>
+      <a onclick="openContact()" id="n-contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <div class="page active" id="p-home">
+    <div class="hero-splash">
+      <div class="hero-img">
+        <video id="hero-video" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;display:block;background:#000;" src="bg_hero.mp4"></video>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-name">MONA<br>FARROKHI</div>
+        <div class="hero-cta">
+          <a class="btn btn-l" onclick="goNewTab('artist')">Artist ↗</a>
+          <a class="btn btn-m" onclick="goNewTab('direction')">Creative Director ↗</a>
+          <a class="btn btn-p" onclick="goNewTab('educator')">Educator ↗</a>
+          <a class="btn btn-o" onclick="openContact()">Contact</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="footer-text">Mona Farrokhi — San Francisco Bay Area, CA</span>
+      <span class="footer-text">monafarrokhi.com</span>
+    </footer>
+  </div>
+
+  <!-- ARTIST -->
+  <div class="page" id="p-artist">
+    <div class="sec">
+      <div class="sec-label">Artist & Technologist</div>
+      <h2>Work & Exhibitions</h2>
+      <p class="sec-intro">I build immersive experiences at the intersection of real-time systems and physical craft — interactive installations, projection-mapped environments, live generative visuals, and mixed-media works. My practice also runs deep into traditional art: painting, sculpting, and drawing that often combine with digital and projection work.</p>
+
+      <div class="sec-label"> SHOWS & EXHIBITS</div>
+      <div class="cards">
+        <div class="card">
+          <div class="cab" style="background:var(--lime)"></div>
+          <div class="card-num">Group Exhibition · Summer 2025</div>
+          <div class="card-title">Gozaar <p>(<i>passing</i>)</p></div>
+          <div class="card-desc">San Jose Institute of Contemporary Arts. <br>Part of group exhibit: <i>"WHO AM I WITHOUT YOU?"</i> curated by Zoe Latzer.</div>
+          <div class="pills"><span class="pill l">Procedural Art</span><span class="pill l">Ethical AI Use</span><span class="pill l">Node-based Programming</span><span class="pill l">Generative Visuals</span><span class="pill l">TouchDesigner</span></div>
+          <div class="arrow">↗</div>
+        </div>
+        <div class="card">
+          <div class="cab" style="background:var(--lime)"></div>
+          <div class="card-num">Solo Exhibition · Spring 2025</div>
+          <div class="card-title">the NOISE I see</div>
+          <div class="card-desc">Herbert Sanders Gallery. Interactive multimedia installations — MFA thesis exhibition at SJSU.</div>
+          <div class="pills"><span class="pill l">Interactive</span><span class="pill l">Installation</span><span class="pill l">Multimedia</span></div>
+          <div class="arrow">↗</div>
+        </div>
+        <div class="card">
+          <div class="cab" style="background:var(--lime)"></div>
+          <div class="card-num">Solo Exhibition · Fall 2024</div>
+          <div class="card-title">DOYOUSEEitNOW</div>
+          <div class="card-desc">Black Gallery. Interactive multimedia installation exploring perception and presence.</div>
+          <div class="pills"><span class="pill l">Interactive</span><span class="pill l">Installation</span><span class="pill l">Mixed Media</span></div>
+          <div class="arrow">↗</div>
+        </div>
+        <div class="card">
+          <div class="cab" style="background:var(--lime)"></div>
+          <div class="card-num">Live Performance · Spring 2025</div>
+          <div class="card-title">Playing the Library: MLK</div>
+          <div class="card-desc">Live generative visuals for SJSU Music Department Symphony, with Christopher Luna-Mega & Pablo Fruman.</div>
+          <div class="pills"><span class="pill l">Live Visuals</span><span class="pill l">Generative</span><span class="pill l">TouchDesigner</span><span class="pill l">Collaboration</span></div>
+          <div class="arrow">↗</div>
+        </div>
+        <div class="card">
+          <div class="cab" style="background:var(--lime)"></div>
+          <div class="card-num">Live Performance · Spring 2024</div>
+          <div class="card-title">San José City Hall Rotunda</div>
+          <div class="card-desc">Co-designed generative visuals for an award-winning Symphony performance led by Christopher Luna-Mega & Pablo Fruman.</div>
+          <div class="pills"><span class="pill l">Live Visuals</span><span class="pill l">Generative</span><span class="pill l">TouchDesigner</span><span class="pill l">Collaboration</span></div>
+          <div class="arrow">↗</div>
+        </div>
+      </div>
+
+    <div class="sec-label">Recognition</div>
+      <div class="gallery-strip">
+        <div class="gal-item">
+          <span class="gal-year">2022–23</span>
+          <span class="gal-venue">Art Battle International</span>
+          <span class="gal-title">SF City Champion · US National Finalist</span>
+          <span class="gal-type">Live Painting Competition</span>
+        </div>
+      </div>
+
+     <div class="sec-label">Associated Skills</div>
+      <div class="dir-grid">
+        <div class="dir-item">
+          <div class="dir-label">Creative Direction</div>
+          <div class="dir-sub">Shaping visual and conceptual direction;</div>
+        </div>
+        <div class="dir-item">
+          <div class="dir-label">Exhibit Production</div>
+          <div class="dir-sub">End-to-end planning and execution of full-scale installations;</div>
+        </div>
+        <div class="dir-item">
+          <div class="dir-label">Fabrication</div>
+          <div class="dir-sub">Custom mixed-media structures;</div>
+        </div>
+        <div class="dir-item">
+          <div class="dir-label">Art Handling & Install</div>
+          <div class="dir-sub">Rigging, hardware, projection systems, and technical logistics;</div>
+        </div>
+        <div class="dir-item">
+          <div class="dir-label">Team Coordination</div>
+          <div class="dir-sub">Directing cross-functional teams across design, fabrication, and technical roles.</div>
+        </div>
+        <div class="dir-item">
+          <div class="dir-label">Project Management</div>
+          <div class="dir-sub">Timeline planning, resource coordination, and keeping complex multi-part productions on track.</div>
+        </div>
+      </div>
+      </div>
+  </div>
+
+  <!-- CREATIVE DIRECTION -->
+  <div class="page" id="p-direction">
+    <div class="sec">
+      <!-- <h3>Creative Direction <br> <span style="margin-left: 50px;">& Project Management</span></h3> -->
+
+      <div class="cards">
+        <div class="card">
+          <div class="cab" style="background:var(--mag)"></div>
+          <div class="card-num">Group Show · Spring 2026</div>
+          <div class="card-title2">System x3</div>
+          <div class="card-subtitle">Jo Farb Hernandez Gallery · San Jose State University</div>
+          <div class="card-body">Three teams. Three systems. Three projections.</div>
+          <div class="card-body">In this section of Art as System, our course is centered on visual development and creative systematic thinking through the creation of complex networks in TouchDesigner.</div>
+          <div class="card-body">TouchDesigner, the primary tool used in this course, is a node-based visual programming environment. Instead of writing lines of code, users construct networks by connecting building blocks, each representing an operation such as generating an image, processing data, or creating controls. These nodes form a pipeline of cause and effect, where changes propagate and generate results in real time. TouchDesigner is a tool that makes artists into engineers, and engineers into artists. For many in the art and design field, this approach offers an accessible environment for computational thinking, allowing systems to be programmed visually and iteratively.</div>
+          <div class="card-body">At the start of the semester, the majority of students had no prior exposure to node-based workflows. The course was structured around developing the ability to explore, test, pivot and adapt. Students learned how to problem-solve and make decisions through experimentation, while being encouraged to focus on their interests and integrate their existing skills into the program, such as illustration, 3D modelling, and sound design.</div>
+          <div class="card-body">Since the midpoint of the semester, we shifted our focus from isolated tutorials to collaborative project building. Students formed three groups and were challenged to define their own working dynamics. Through guided prompts, production tasks, and incremental checkpoints, they began constructing their own pipelines for building interactive work. This process introduced them to the realities of production: coordinating roles, managing timelines, testing systems in space, and refining work toward exhibition readiness. At the same time, these structures served as an entry point into skills used in real-world installations, where creative direction, technical troubleshooting, and collaboration must operate simultaneously as a working system.</div>
+          <div class="card-body">Through this process, their projects came to fruition in diverse directions. Each group approached the idea of a "system" differently.</div>
+          <div class="card-projects">
+            <div>
+              <div class="card-project-title">Negative Excursion</div>
+              <div class="card-project-sub">A fully functioning two-player game</div>
+              <div class="card-project-names">Ellie Alaniz · Andres Jamarillo · Daniel Meza · Ryan Redden</div>
+            </div>
+            <div>
+              <div class="card-project-title">Stardust</div>
+              <div class="card-project-sub">An abstract, interactive interface generated in real time</div>
+              <div class="card-project-names">Vy Cao · Hoang Anh Huan Nguyen · Ruby Torresani · Ethan Vilchis Macedo</div>
+            </div>
+            <div>
+              <div class="card-project-title">T*ck Happens</div>
+              <div class="card-project-sub">A timed, conceptual, projection-mapped composition</div>
+              <div class="card-project-names">Tai Pham · Brandon Vuong · Audrey Wai</div>
+            </div>
+          </div>
+          <div class="pills"><span class="pill m">Instructor</span><span class="pill m">Project Manager</span><span class="pill m">TouchDesigner</span><span class="pill m">Exhibition</span></div>
+        </div>
+        </div>
+
+
+
+      <div class="sec-label">Associated Skills</div>
+      <div class="dir-grid">
+        <div class="dir-item">
+          <div class="dir-label">Creative Direction</div>
+          <div class="dir-sub">Shaping visual and conceptual direction;</div>
+        </div>
+        <div class="dir-item">
+          <div class="dir-label">Exhibit Production</div>
+          <div class="dir-sub">End-to-end planning and execution of full-scale installations;</div>
+        </div>
+        <div class="dir-item">
+          <div class="dir-label">Fabrication</div>
+          <div class="dir-sub">Custom mixed-media structures;</div>
+        </div>
+        <div class="dir-item">
+          <div class="dir-label">Art Handling & Install</div>
+          <div class="dir-sub">Rigging, hardware, projection systems, and technical logistics;</div>
+        </div>
+        <div class="dir-item">
+          <div class="dir-label">Team Coordination</div>
+          <div class="dir-sub">Directing cross-functional teams across design, fabrication, and technical roles.</div>
+        </div>
+        <div class="dir-item">
+          <div class="dir-label">Project Management</div>
+          <div class="dir-sub">Timeline planning, resource coordination, and keeping complex multi-part productions on track.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEACHING -->
+  <div class="page" id="p-educator">
+    <div class="sec">
+      <div class="sec-label">Teaching</div>
+      <h2>Teaching Portfolio</h2>
+      <p class="sec-intro">I teach digital media arts at the university level — currently at San José State University, and in other contexts across the Bay Area. My courses run as production environments: students develop real work, operate in coordinated roles, and present publicly. I draw on my background in installation, technical art, fabrication, and project management to run the classroom like a working studio.</p>
+
+      <div class="sec-label">Courses</div>
+      <div class="cards">
+        <div class="card">
+          <div class="cab" style="background:var(--purp)"></div>
+          <div class="card-num">Lower Division · SJSU</div>
+          <div class="card-title">Intro to Digital / New Media Arts</div>
+          <div class="card-desc">Foundational course covering visual design tools, web development, and mixed-media workflows. Taught through lectures, critiques, and discussion-based learning — students produce a strong final portfolio.</div>
+          <div class="pills"><span class="pill p">Visual Design</span><span class="pill p">Web Dev</span><span class="pill p">Mixed Media</span><span class="pill p">Critique</span><span class="pill p">Portfolio</span></div>
+          <div class="arrow">↗</div>
+        </div>
+        <div class="card">
+          <div class="cab" style="background:var(--purp)"></div>
+          <div class="card-num">Upper Division · SJSU</div>
+          <div class="card-title">Art as System</div>
+          <div class="card-desc">In-studio bridge course built around real-world pipelines, installation planning, and coordinated team roles. Semester ends with a public gallery exhibition featuring three full-scale student installations.</div>
+          <div class="pills"><span class="pill p">TouchDesigner</span><span class="pill p">Installation</span><span class="pill p">Production</span><span class="pill p">Exhibition</span></div>
+          <div class="arrow">↗</div>
+        </div>
+      </div>
+
+      <div class="sec-label">Background & education</div>
+      <div class="dir-grid">
+        <div class="dir-item">
+          <div class="dir-label">MFA · Digital Media Arts</div>
+          <div class="dir-sub">San José State University, 2022–2025</div>
+        </div>
+        <div class="dir-item">
+          <div class="dir-label">BA · Industrial Design</div>
+          <div class="dir-sub">Iran University of Art (Tehran), 2015–2019</div>
+        </div>
+        <div class="dir-item">
+          <div class="dir-label">Studio & Production</div>
+          <div class="dir-sub">INVERSE School, Tehran — studio ops, workshop logistics, student shows (2017–2019)</div>
+        </div>
+        <div class="dir-item">
+          <div class="dir-label">Concept Artist</div>
+          <div class="dir-sub">CAST — pre-production visual development, Surena III Robot (2017–2018)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="page" id="p-about">
+    <div class="sec">
+      <div class="sec-label">About</div>
+      <h2>About Mona</h2>
+      <p class="sec-intro">Coming soon.</p>
+        <div class="hero-cta">
+             <a class="btn btn-o" a href="Mona-Farrokhi_Resume.pdf" target="_blank">RESUME</a>
+        </div>
+    </div>
+    <footer><span class="footer-text">monafarrokhi.com</span></footer>
+  </div>
+
+  <!-- CONTACT MODAL -->
+  <div class="modal-overlay" id="contact-modal" onclick="closeContactIfBg(event)">
+    <div class="modal-box">
+      <div class="modal-top"></div>
+      <div class="modal-inner">
+        <button class="modal-close" onclick="closeContact()">✕ Close</button>
+        <div class="modal-label">Get in touch</div>
+        <div class="modal-name">Mona Farrokhi</div>
+        <div class="modal-rows">
+          <div class="modal-row">
+            <span class="modal-row-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+            <span class="modal-row-key">Location</span>
+            <span class="modal-row-val"><a href="https://www.google.com/maps/search/San+Francisco+Bay+Area,+CA" target="_blank">San Francisco Bay Area, CA</a></span>
+          </div>
+          <div class="modal-row">
+            <span class="modal-row-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+            <span class="modal-row-key">Email</span>
+            <span class="modal-row-val"><a href="mailto:pxlpxlx@gmail.com">pxlpxlx@gmail.com</a></span>
+          </div>
+          <div class="modal-row">
+            <span class="modal-row-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
+            <span class="modal-row-key">LinkedIn</span>
+            <span class="modal-row-val"><a href="https://www.linkedin.com/in/mona-farrokhi/" target="_blank">Mona-Farrokhi</a></span>
+          </div>
+          <div class="modal-row">
+            <span class="modal-row-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg></span>
+            <span class="modal-row-key">GitHub</span>
+            <span class="modal-row-val"><a href="https://github.com/pixelpixelx" target="_blank">pixelpixelx</a></span>
+          </div>
+          <div class="modal-row">
+            <span class="modal-row-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/></svg></span>
+            <span class="modal-row-key">Instagram</span>
+            <span class="modal-row-val"><a href="https://instagram.com/__pixelpixel__" target="_blank">@__pixelpixel__</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.wrap -->
+
+<script src="main.js"></script>
+</body>
+</html>
