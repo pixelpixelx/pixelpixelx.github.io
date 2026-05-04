@@ -8,7 +8,7 @@ a,button,[onclick]{cursor:crosshair}
   --text:#f0f0f0;--muted:#b5b5b5;--border:#131313;
 }
 .wrap{font-family:'Inter',sans-serif;color:var(--text);background:var(--bg);position:relative;min-height:100vh}
-html,body{height:100%;margin:0;padding:0;overflow:hidden}
+html,body{height:100%;margin:0;padding:0; overflow-y:auto;}
 
 /* ── NAV ── */
 nav{position:relative;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 2rem;border-bottom:1px solid var(--border);background:var(--bg);flex-wrap:wrap;gap:.5rem;transition:opacity .3s}
@@ -31,7 +31,7 @@ nav.nav-hidden{display:none}
 .page{display:none;position:relative;z-index:5}
 .page.active{display:block}
 #p-home{display:none}
-#p-home.active{display:flex;flex-direction:column;height:100vh;overflow:hidden}
+#p-home.active{display:flex;flex-direction:column;height:100vh;}
 
 /* ── HERO ── */
 .hero-splash{position:relative;width:100%;flex:1;min-height:0;background:var(--bg2);overflow:hidden;display:flex;align-items:flex-end}
@@ -66,6 +66,38 @@ nav.nav-hidden{display:none}
 .btn-p:hover{background:transparent;color:var(--purp);transition:background .5s ease,color .5s ease,border-color .5s ease,letter-spacing .5s ease;animation:btn-ls-pulse .5s ease-out .1s forwards}
 .btn-o{color:var(--text);border-color:var(--border)}
 .btn-o:hover{border-color:var(--muted);color:var(--lime)}
+
+.arrow-up-right {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  margin-left: 4px;
+}
+
+.arrow-up-right::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 1.5px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  top: 5px;
+  left: 0;
+}
+
+.arrow-up-right::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(0deg);
+  top: 1px;
+  right: 0;
+}
+
 
 /* ── SECTIONS ── */
 .sec{padding:1.75rem 2rem 2rem}
